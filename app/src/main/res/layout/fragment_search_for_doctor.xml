@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- layout for the search for doctor fragment -->
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:padding="@dimen/layout_padding"
+
+    >
+
+    <!-- Edit text for specialization -->
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/search_doctor_til_specialization"
+
+        android:layout_marginBottom="@dimen/space_between_content_areas"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:hint="Specialization"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Edit text for location -->
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/search_doctor_til_location"
+
+        android:layout_marginTop="@dimen/space_between_content_areas"
+
+        android:layout_marginBottom="@dimen/space_between_content_areas"
+
+        android:layout_below="@id/search_doctor_til_specialization"
+        >
+
+        <android.support.design.widget.TextInputEditText
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:hint="Location"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Edit text for years of experience -->
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/search_doctor_til_years_experience"
+
+        android:layout_marginTop="@dimen/space_between_content_areas"
+
+        android:layout_below="@id/search_doctor_til_location"
+        >
+
+        <android.support.design.widget.TextInputEditText
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:hint="Years of experience"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- A FAB -->
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/ic_search_24dp"
+
+        app:elevation="6dp"
+
+        app:fabSize="normal"
+
+        app:pressedTranslationZ="12dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentEnd="true"
+
+        app:borderWidth="0dp"
+
+        app:layout_anchorGravity="bottom|right|end"
+
+        />
+
+</RelativeLayout>
