@@ -22,6 +22,12 @@
 
     <dimen name="material_button_raised_width_minimum">88dp</dimen>
 
+    <!-- CardViews -->
+
+    <dimen name="card_content_bottom_margin">24dp</dimen>
+
+    <dimen name="card_elevation">6dp</dimen>
+
     <!-- Content margins -->
 
     <dimen name="content_start_margin">72dp</dimen>

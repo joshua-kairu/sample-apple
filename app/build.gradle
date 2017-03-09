@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion 25
@@ -22,6 +23,7 @@ android {
 
 // extensions
 ext {
+    butterKnifeVersion = "8.4.0"
     supportLibraryVersion = "25.0.1"
     playServicesVersion = "10.0.1"
 }
@@ -34,12 +36,15 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
-    compile "com.android.support:recyclerview-v7:$supportLibraryVersion"
-    compile 'com.jakewharton:butterknife:8.4.0'
-    compile "com.android.support:design:$supportLibraryVersion"
+    // butterknife
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
+    compile "com.jakewharton:butterknife:$butterKnifeVersion"
 
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    // support
+    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
+    compile "com.android.support:cardview-v7:$supportLibraryVersion"
+    compile "com.android.support:design:$supportLibraryVersion"
+    compile "com.android.support:recyclerview-v7:$supportLibraryVersion"
 
     testCompile 'junit:junit:4.12'
 }

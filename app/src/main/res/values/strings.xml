@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">Find A Doctor</string>
+    <string name="app_name">Sampler</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="sample_email">jamie.kamau@gmail.com</string>
+
+    <!-- social learning -->
+
+    <string name="welcome">Welcome to Learnr</string>
+
+    <string name="course_title">Introduction to Ship Engineering</string>
+
+    <string name="course_intro">
+        From the start of time, man has tried to conquer the ocean frontier using ships.\nLearn the basics used to make the earliest canoe to the latest liner float in the big blue.\nImage: Siemens.
+    </string>
+
+    <string name="course_public">Public Course</string>
+
 </resources>

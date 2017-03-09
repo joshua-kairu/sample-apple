@@ -35,10 +35,15 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState ) {
 
         // 0. super stuff
+        // 1. use the needed layout
 
         // 0. super stuff
 
         super.onCreate( savedInstanceState );
+
+        // 1. use the needed layout
+
+        setContentView( R.layout.fragment_social_learning_home );
 
     } // end onCreate
     

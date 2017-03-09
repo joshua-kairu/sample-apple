@@ -1,9 +1,14 @@
 package com.joslittho.sampler;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * The landing
@@ -23,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     
     /* VARIABLES */
+
+    /* Buttons */
+
+    @BindView( R.id.login_b_sign_in )
+    public Button mSignInButton; // ditto
     
     /* CONSTRUCTOR */
     
@@ -46,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         // 1. use the needed layout
 
-        setContentView( R.layout.fragment_search_for_doctor );
+        setContentView( R.layout.fragment_login );
 
         // 2. bind
 
@@ -55,5 +65,17 @@ public class MainActivity extends AppCompatActivity {
     } // end onCreate
     
     /* Other Methods */
+
+    @OnClick( R2.id.login_b_sign_in )
+    // begin method onClickSignInButton
+    public void onClickSignInButton( View view ) {
+
+        // 0. start the second activity
+
+        // 0. start the second activity
+
+        startActivity( new Intent( this, SecondActivity.class ) );
+
+    } // end method onClickSignInButton
 
 } // end activity MainActivity
